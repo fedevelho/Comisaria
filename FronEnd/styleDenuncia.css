@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(#fff, #1565C0);
+}
+.encabezado{
+    display: flex;
+    background: linear-gradient(#1565C0, #fff);
+    align-items: center;
+    padding: 20px;
+}
+
+.encabezado img{
+    height: auto;
+    width: 200px;
+}
+.encabezado h1{
+    font-size: 50px;
+    color: #0000CC;
+}
+.menu{
+    background-color: #0000CC;
+}
+.contenedor{
+ 
+    height: auto;
+    padding: 15px 15px;
+    margin: 50px;
+    background-color: #1E90FF;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;  
+}
+
+.formulario{
+    margin: 50px;
+}
+
+body form h3{
+    color: #000080;
+    font-size: 30px;
+}
+body form label{
+    font-size: 20px;
+    color: #000080;
+}
+body form input{
+    width: 300px;
+    font-size: 20px;
+    margin: 5px;
+    padding: 4px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000080;
+    outline: 0px;
+    color: #000;
+}
+.formulario select{
+    width: 150px;
+    font-size: 20px;
+    margin: 5px;
+    padding: 4px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: 0px;
+    color: #000080;
+
+}
+#numSumarioInput{
+    width: 80px;
+    
+}
+#añoSumInput{
+    width: 80px; 
+}
+
+.nombre{
+    width: 250px;
+    
+}
+.alias{
+    width: 150px;
+}
+.edad{
+    width: 80px;
+}
+.profesion{
+    width: 150px;
+}
+.fechaNac{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50px;
+}
+.domicilio{
+    width: 150px
+}
+.altura{
+    width: 80px;
+}
+.depto{
+    width: 80px; 
+}
+.lugar{
+    width: 150px;
+    
+}
+.documento{
+    width: 150px;
+}
+.telefono{ 
+    width: 150px;
+    
+}
+/* CONTENEDOR TEXTO */
+.editor {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #0330ab;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    height: auto;
+    
+    
+}
+.toolbar {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000000;
+    padding: 5px;
+    
+    
+}
+.editor textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    resize: vertical;
+    text-transform: none;
+}
+.editor button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    
+    
+}
+.editor button:hover {
+    background-color: #0056b3;
+    
+}
+#editor{
+    text-transform: none;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 300px;
+    background-color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+/* BOTON CARGAR */
+
+.btnContenedor{
+    margin: 20px auto 10px auto;
+    width: 30%;
+}
+
+.btnCargar {
+    width: 100%;
+    background: #3498db;
+    color: #ffffff;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 28px;
+    padding: 2px 20px 2px 20px;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
+    text-transform: none;
+   
+    
+}
+.btnCargar:hover{
+    
+     background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}

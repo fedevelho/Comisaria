@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "styleDenuncia.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+    <title>Denuncia</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="encabezado">
+            <img src="Img/Escudos/EscudoPolicia.png" alt="logo">
+            <h1>Denuncia</h1>
+        </div>
+        
+    </header>
+    <!-- Menu -->
+    <div class="menu">
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+    
+    <section class="contenedor">
+        
+        <!-- FORMULARIO DATOS INICIALES -->
+        <form class="formulario">
+            <label for="">
+                <h3 class="TituloForm">Sumario:</h2>
+            </label>
+            <!--  SUMARIO -->
+            <div>
+                <label>Numero:</label>
+                <input type="number" id="numSumarioInput">
+                <label>Año:</label>
+                <input type="number" id="añoSumInput">
+            </div>
+            <!-- CARATULA -->
+            <div>
+                <label>Caratula</label>
+                <input type="text" id="caratulaInput" list="caratulaList">
+                <datalist id="caratulaList">
+                    <option value="Hurto"></option>
+                    <option value="Hurto Calf."></option>
+                    <option value="Robo"></option>
+                    <option value="Robo Calf."></option>
+                    <option value="Amenazas"></option>
+                    <option value="Amenazas Calf."></option>
+                    <option value="Lesiones Leves"></option>
+                    <option value="Lesiones Leves Dolosas"></option>
+                    <option value="Lesiones Graves"></option>
+                    <option value="Estafa"></option>
+                    <option value="Violencia Familiar"></option>
+                    <option value="Desobediencia"></option>
+                    <option value="Abuso Sexual"></option>
+
+                </datalist>
+            </div>
+           
+            <!--FISCALIA  -->
+            <div>
+                <label>Fiscalia:</label>
+                <Input type="text" id="fiscaliaInput" name="fiscaliaInput" list="fiscaliaList">
+                <datalist id="fiscaliaList">
+                    <option value="1° Turno"></option>
+                    <option value="2° Turno"></option>
+                    <option value="3° Turno"></option>
+                    <option value="4° Turno"></option>
+                    <OPtion value="Juzgado de Viol. Y Jueza De Paz"></OPtion>
+                    <option value="Juzgado de Menores"></option>
+                    <option value="Feria"></option>
+                </datalist>
+            </div>
+            
+
+              <!-- LOCALIDAD -->
+            <div>
+                <label>Dependencia</label>
+                <select id="localidadInput" name="localidad">
+                    <option value="Gral. Cabrera">Gral. Cabrera</option>
+                    <option value="Gral. Cabrera">Gral. Deheza</option>
+                    <option value="Gral. Cabrera">Carnerillo</option>
+                </select>
+            </div>
+            <!-- SUMARIANTE -->
+            <div>
+                <label>Sumariante:</label>
+                <Input type="text" id="sumarianteInput" list="sumarianteList">
+                <datalist id="sumarianteList">
+                    <option value="Crio Ariana Palacios"></option>
+                    <option value="Sub Crio Zabala Martin"></option>
+                </datalist>
+            </div>
+            <!-- SECRETARIO ACTUACIONES -->
+            <div>
+                <label>Sec Actuaciones:</label>
+                <Input type="text" id="secActuacionesInput" list="personalList">
+                <datalist id="personalList">
+                    <!-- LISTA DEL PERSONAL POLICIAL -->
+                    <option value="Of Ayte Velho Federico"></option>
+                    <option value="Sgto 1° Gatica Vanesa"></option>
+                    <option value="Sgto Chavarria Roberto"></option>
+                    <option value="Cabo Toselli Mateo"></option>
+                </datalist>
+            </div>
+            <!-- COMISIONADO -->
+            <div>
+                <label>Comisionado:</label>
+                <Input type="text" id="comisionadoInput" list="personalList">
+                <datalist id="personalList">
+                    
+                </datalist>
+            </div>
+            <!-- TESTIGO DENUNCIA -->
+            <div>
+                <label>Testigo Denuncia:</label>
+                <Input type="text" id="testigoInput" list="personalList">
+                <datalist id="personalList">
+                    
+                </datalist>
+            </div>
+
+                
+        </form>
+         <!-- FORMULARIO DENUNCIANTE -->
+        
+        <form class="formulario">
+            <h3 class="TituloForm">Denunciante:</h3>
+             <!-- NOMBRE -->
+            <div>
+                <label>Nombre y Apellido:</label>
+                <input class="nombre" type="text" id="nombreInput">
+            </div>
+             <!-- ALIAS -->
+            <div>
+                <label>Alias:</label>
+                <input class="alias" type="text" id="aliasInput" list="aliasList">
+                <datalist id="aliasList">
+                    <option value="No Tiene"></option>
+                </datalist>
+            </div>
+            <!-- NACIONALIDAD -->
+            <div>
+                <label>Nacionalidad:</label>
+                <select id="nacionalidadInput" name="nacinalidad">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Boliviana">Boliviana</option>
+                    <option value="Brasilera">Brasilera</option>
+                    <option value="Uruguaya">Uruguaya</option>
+                    <option value="Chilena">Chilena</option>
+                    <option value="Paraguaya">Paraguayo</option>
+                 </select>
+            </div>
+            <!-- ESTADO CIVIL -->
+            <div>
+                <label> Estado Civil:</label>
+                <select id="civilInput" name="estadoCivil">
+                    <option value="Soltero">Soltero</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Viudo">Viudo</option>
+                    <option value="Divorsiado">Divorsiado</option>
+                </select>
+            </div>
+            <!-- Edad -->
+            <div>
+                <label>Edad:</label>
+                <input class="edad" type="number" id="edadInput">
+            </div>
+            <!-- INSTRUCCION -->
+            <div>
+                <label>Instruccion:</label>
+                <select id="instruccionInput" name="instruccion">
+                    <option value="Con Instrucción">Con Instrucción</option>
+                    <option value="Sin Instrucción">Sin Instrucción</option>
+                </select>
+            </div>
+            <!-- PROFESION -->
+            <div>
+                <label>Profesion:</label>
+                <input class="profesion" type="text" id="profesionInput" list="profesionList">
+                <datalist id="profesionList">
+                    <option value="Desempleado"></option>
+                    <option value="Jornalero"></option>
+                    <option value="Changarin"></option>
+                    <option value="Empleado"></option>
+                    <option value="Empleado Rural"></option>
+                    <option value="Empleado de Comercio"></option>
+                    <option value="Comerciante"></option>
+                    <option value="Ama De Casa"></option>
+                    <option value="Enfermera"></option>
+                    <option value="Doctora"></option>
+                </datalist>
+            </div>
+            <!-- DOMICILIO -->
+            <div>
+                <label>Domicilio</label>
+                <input class="domicilio" type="text" id="domicilioInput" placeholder="Calle">
+                <input class="altura" type="number" id="alturaInput" placeholder="Altura">
+                <input class="depto" type="text" id="deptoInput" placeholder="Depto">
+                <input class="lugar" type="text" id="LugarDomicilioInput" placeholder="Ciudad" list="ciudadList">
+                <datalist id="ciudadList">
+                    <option value="Gral. Cabrera"></option>
+                    <option value="Gral. Deheza"></option>
+                    <option value="Carnerillo"></option>
+                    <option value="Río Cuarto"></option>
+                 </datalist>
+            </div>
+            <!-- LUGAR/FECHA DOMICILIO -->
+            <div>
+                <label>Fecha Nacimiento:</label>
+                <input type="date" id="fechaNacInput" placeholder="Fecha Nac.">
+                <input class="lugar" type="text" id="lugarInput" placeholder="Lugar Nacimiento" list="lugarList">
+            <datalist id="lugarList">
+                <option value="Gral. Cabrera"></option>
+                <option value="Gral. Deheza"></option>
+                <option value="Carnerillo"></option>
+                <option value="Río Cuarto"></option>
+             </datalist>
+           </div>
+           <!-- DOCUMENTO -->
+            <div>
+                <label>Documento:</label>
+                <input class="documento" type="number" id="documentoInput">
+            </div>
+           
+            <!-- TELEFONO -->
+            <label>Telefono:</label>
+            <input class="telefono" type="number" id="telefonoInput">
+         </form> 
+         
+         <!-- FORMULARIO DAMNIFICADO -->
+         <form class="formulario">
+            <label for="">
+                <h3 class="TituloForm">Damnificado:</h3>
+            </label>
+            <!-- NOMBRE -->
+            <div>
+                <label>Nombre y Apellido:</label>
+                <input class="nombre" type="text" id="nombreDamInput" list="nombreDamInputList">
+                <datalist id="nombreDamInputList">
+                    <option value="El Mismo"></option>
+                </datalist>
+            </div>
+           
+           
+        <!-- FORMULARIO ACUSADO -->
+         </form>  
+        <form class="formulario">
+            <label for="">
+                <h3 class="TituloForm">Acusado:</h3>
+            </label>
+            <!-- NOMBRE -->
+            <div>
+                <label>Nombre y Apellido:</label>
+                <input class="nombre" type="text" id="nombreAcuInput" list="nombreAcuInputList">
+                <datalist id="nombreAcuInputList">
+                    <option value="A Establecer"></option>
+                </datalist>
+            </div>
+            
+            
+        </form>
+         <div class="editor">
+            <div class="toolbar">
+                <button onclick="document.execCommand('bold', false, null)"><b>B</b></button>
+                <button onclick="document.execCommand('italic', false, null)"><i>I</i></button>
+                <button onclick="document.execCommand('underline', false, null)"><u>U</u></button>
+            </div>
+            <div contenteditable="true" id="editor" role="textbox" aria-multiline="true" aria-label="Editor de Texto"></div>
+        </div>
+ 
+        <div class="btnContenedor">
+            <button class="btnCargar" onclick="sendData()">Cargar Datos</button> 
+            
+        </div>
+    </section>
+    <div><p id="datosMostrados"></p></div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
